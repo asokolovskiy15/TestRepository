@@ -1,1 +1,27 @@
-asdf
+### YamlMime:Sample
+sample:
+- name: Using Azure APIs
+  path: /samples/api/azure
+  description: A sample that shows how to use Azure APIs.
+  screenshots:
+  - path: /url/screenshot1.jpg
+    description: Azure Portal
+    alt: Screenshot of Azure Portal
+  - path: /url/screenshot2.jpg
+    description: Azure Portal (Classic)
+    alt: Screenshot of Azure Classic Portal
+  generateZip: true
+  azureDeploy: /path/to/template.json
+  author: dend
+  languages:
+  - csharp
+  - vbnet
+  - fsharp
+  technologies:
+  - office
+  - windows
+  - xbox
+  extensions:
+  - someExtensionEntry:
+    - altEntry
+    - altContent
