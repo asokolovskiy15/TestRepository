@@ -1,16 +1,14 @@
 ### YamlMime:Sample
 sample:
 - name: Using Azure APIs
-  path: /samples/api/azure
   description: A sample that shows how to use Azure APIs.
-  screenshots:
-  - path: /url/screenshot1.jpg
-    description: Azure Portal
-    alt: Screenshot of Azure Portal
-  - path: /url/screenshot2.jpg
-    description: Azure Portal (Classic)
-    alt: Screenshot of Azure Classic Portal
+  image: /repo/root/rel/path/image.jpg
   generateZip: true
+  extendedZipContent:
+  - path: /some/path/in/repo
+    target: /
+  - path: /another/path/in/repo
+    target: /
   azureDeploy: /path/to/template.json
   author: dend
   languages:
