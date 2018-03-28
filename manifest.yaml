@@ -1,0 +1,25 @@
+-### YamlMime:Sample
+-sample:
+-- name: Using Azure APIs
+-  description: A sample that shows how to use Azure APIs.
+-  image: /repo/root/rel/path/image.jpg
+-  generateZip: true
+-  extendedZipContent:
+-  - path: /some/path/in/repo
+-    target: /
+-  - path: /another/path/in/repo
+-    target: /
+-  azureDeploy: /path/to/template.json
+-  author: asokolovskiy15
+-  languages:
+-  - csharp
+-  - vbnet
+-  - fsharp
+-  technologies:
+-  - office
+-  - windows
+-  - xbox
+-  extensions:
+-  - someExtensionEntry:
+-    - altEntry
+-    - altContent
