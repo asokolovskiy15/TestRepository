@@ -10,7 +10,6 @@ sample:
   azureDeploy: /path/to/template.json
   author: dend
   languages:
-  - csharp
   - vbnet
   - fsharp
   technologies:
