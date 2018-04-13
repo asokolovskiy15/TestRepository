@@ -12,7 +12,6 @@ sample:
   languages:
   - csharp
   - vb
-  - fsharp
   technologies:
   - azure
   vssolution: /repo/test/solution.sln
