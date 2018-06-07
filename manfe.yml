@@ -1,0 +1,18 @@
+### YamlMime:Sample
+sample:
+- description: A sample that shows how to use Azure APIs.
+  image: /repo/root/rel/path/image.jpg
+  generateZip: true
+  extendedZipContent:
+  - path: /FolderOne
+    target: /
+  azureDeploy: /path/to/template.json
+  languages:
+  - csharp
+  technologies:
+  - advanced-threat-analytics
+  vssolution: /repo/test/solution.sln
+  extensions:
+  - someExtensionEntry:
+    - altEntry
+    - altContent
