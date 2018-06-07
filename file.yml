@@ -12,7 +12,7 @@ sample:
   languages:
   - csharp
   technologies:
-  - internet-explorer-10
+  - azure-java
   vssolution: /repo/test/solution.sln
   extensions:
   - someExtensionEntry:
