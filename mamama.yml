@@ -7,7 +7,7 @@ sample:
   - path: /
     target: /
   azureDeploy: /path/to/template.json
-  author: anto
+  author: anton
   languages:
   - csharp
   technologies:
