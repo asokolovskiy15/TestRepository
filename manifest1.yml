@@ -1,0 +1,20 @@
+### YamlMime:Sample
+sample:
+- name: Nice manifest
+  description: A sample that shows how to use Azure APIs.
+  image: /repo/root/rel/path/image.jpg
+  generateZip: true
+  extendedZipContent:
+  - path: /
+    target: /
+  azureDeploy: /path/to/template.json
+  author: ant
+  languages:
+  - csharp
+  technologies:
+  - advanced-threat-analytics
+  vssolution: /repo/test/solution.sln
+  extensions:
+  - someExtensionEntry:
+    - altEntry
+    - altContent
