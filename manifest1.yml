@@ -10,7 +10,7 @@ sample:
   azureDeploy: /path/to/template.json
   author: ant
   languages:
-  - csharp
+  - vbnet
   technologies:
   - advanced-threat-analytics
   vssolution: /repo/test/solution.sln
