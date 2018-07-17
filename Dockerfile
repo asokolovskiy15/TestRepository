@@ -6,10 +6,10 @@ RUN apt-get install -y git
 RUN git clone https://github.com/asokolovskiy15/DockerBuild
 
 # copy csproj and restore as distinct layers
-COPY *.csproj ./
+COPY MyTestClass/MyTestClass/*.csproj MyTestClass/MyTestClass/./
 RUN dotnet restore
 
 # copy and build everything else
-COPY . ./
+COPY MyTestClass/MyTestClass/. MyTestClass/MyTestClass/./
 RUN dotnet publish -c Release -o out
 ENTRYPOINT ["dotnet", "out/DockerCore.dll"]
