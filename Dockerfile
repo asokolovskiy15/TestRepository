@@ -6,7 +6,7 @@ RUN apt-get install -y git
 RUN git clone https://github.com/asokolovskiy15/DockerCC
 
 # copy csproj and restore as distinct layers
-COPY *.csproj ./
+COPY MySolution/MySolution/*.csproj ./
 RUN dotnet restore
 
 # copy and build everything else
