@@ -9,4 +9,4 @@ RUN dotnet restore
 # copy and build everything else
 COPY . ./
 RUN dotnet publish -c Release -o out
-ENTRYPOINT ["dotnet", "out/DockerCore.dll"]
+ENTRYPOINT ["dotnet", "out/d.dll"]
