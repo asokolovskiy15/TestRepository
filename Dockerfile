@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework:3.5
+FROM microsoft/dotnet-framework-docker
 WORKDIR /app
 
 
