@@ -1,4 +1,4 @@
-FROM microsoft/4.7.2-sdk
+FROM microsoft/dotnet-framework:4.7.2-sdk
 WORKDIR /app
 
 
