@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework-docker
+FROM microsoft/4.7.2-sdk
 WORKDIR /app
 
 
