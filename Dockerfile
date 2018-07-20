@@ -1,12 +1,19 @@
-FROM microsoft/dotnet-framework:3.5-sdk
-WORKDIR /app
+FROM node:8
 
+# Create app directory
+WORKDIR /usr/src/app
 
-# copy csproj and restore as distinct layers
-COPY {0}*.csproj ./
-RUN dotnet restore
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
 
-# copy and build everything else
-COPY . ./
-RUN dotnet publish -c Release -o out
-ENTRYPOINT ["dotnet", "out/d.dll"]
+RUN npm install
+# If you are building your code for production
+# RUN npm install --only=production
+
+# Bundle app source
+COPY . .
+
+EXPOSE 8080
+CMD [ "npm", "start" ]
