@@ -1,11 +1,7 @@
-FROM microsoft/dotnet:2.0-sdk
-WORKDIR /app
+FROM python:3
 
-# copy csproj and restore as distinct layers
-COPY {0}*.csproj ./
-RUN dotnet restore
+ADD my_script.py /
 
-# copy and build everything else
-COPY . ./
-RUN dotnet publish -c Release -o out
-ENTRYPOINT ["dotnet", "out/DockerCore.dll"]
+RUN pip install pystrich
+
+CMD [ "python", "./my_script.py" ]
