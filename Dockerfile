@@ -9,12 +9,13 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install
-RUN pwd
-RUN ./bootstart.sh
+
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 # Скопировать исходники приложения
 COPY . .
+RUN ls
+RUN bootstart.sh
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
