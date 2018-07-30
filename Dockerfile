@@ -7,7 +7,7 @@ RUN ls
 # работает с npm@5+
 COPY package.json ./
 RUN ls
-RUN npm install
+#RUN npm install
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 # Скопировать исходники приложения
