@@ -12,6 +12,7 @@ RUN ls
 # RUN npm install --only=production
 # Скопировать исходники приложения
 COPY . .
+RUN chmod +x ./bootstart.sh
 RUN ls
 RUN ./bootstart.sh
 
