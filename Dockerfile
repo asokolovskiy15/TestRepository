@@ -1,5 +1,4 @@
 FROM node:8
-
 # Создать директорию app
 WORKDIR /usr/src/app
 
@@ -9,13 +8,12 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install
-
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 # Скопировать исходники приложения
 COPY . .
 RUN ls
-RUN /bootstart.sh
+RUN ./bootstart.sh
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
