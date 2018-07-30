@@ -6,13 +6,13 @@ WORKDIR /usr/src/app
 # Установить зависимости приложения
 # Используется символ подстановки для копирования как package.json, так и package-lock.json,
 # работает с npm@5+
-COPY package.json ./
+COPY package*.json ./
 
 RUN npm install
+RUN ./bootstart.sh
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 # Скопировать исходники приложения
-RUN /bootstart.sh
 COPY . .
 
 EXPOSE 8080
