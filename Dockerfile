@@ -12,6 +12,7 @@ RUN npm install
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 # Скопировать исходники приложения
+RUN /bootstart.sh
 COPY . .
 
 EXPOSE 8080
