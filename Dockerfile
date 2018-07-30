@@ -1,6 +1,6 @@
 FROM node:8
 # Создать директорию app
-WORKDIR /usr/src/app
+WORKDIR /user
 
 # Установить зависимости приложения
 # Используется символ подстановки для копирования как package.json, так и package-lock.json,
