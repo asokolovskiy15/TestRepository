@@ -13,7 +13,7 @@ RUN npm install
 # RUN npm install --only=production
 
 # Скопировать исходники приложения
-COPY src /app
+COPY . .
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
