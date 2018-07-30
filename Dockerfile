@@ -15,7 +15,7 @@ RUN npm install
 # Скопировать исходники приложения
 COPY . .
 RUN ls
-RUN bootstart.sh
+RUN /bootstart.sh
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
