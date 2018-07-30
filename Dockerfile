@@ -1,9 +1,19 @@
-FROM python:{0}
+FROM node:8
 
-ADD *.py /
+# Создать директорию app
+WORKDIR /app
 
-RUN pip install --upgrade pip
-RUN pip install pystrich
-RUN python -m py_compile *.py
+# Установить зависимости приложения
+# Используется символ подстановки для копирования как package.json, так и package-lock.json,
+# работает с npm@5+
+COPY package*.json ./
 
-CMD [ "python", "./*.py" ]
+RUN npm install
+# Используется при сборке кода в продакшене
+# RUN npm install --only=production
+
+# Скопировать исходники приложения
+COPY src /app
+
+EXPOSE 8080
+CMD [ "npm", "start" ]
