@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
-
+RUN npm run build
 # Скопировать исходники приложения
 COPY . .
 
