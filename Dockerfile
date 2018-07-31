@@ -5,8 +5,8 @@ WORKDIR /usr/src/app
 # Используется символ подстановки для копирования как package.json, так и package-lock.json,
 # работает с npm@5+
 COPY . ./
-RUN chmod +x ./nodecheck.sh
-RUN ./nodecheck.sh
+RUN chmod +x ./bootstart.sh
+RUN ./bootstart.sh
 
 RUN npm install
 # Используется при сборке кода в продакшене
