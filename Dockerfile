@@ -4,9 +4,7 @@ WORKDIR /usr/src/app
 # Установить зависимости приложения
 # Используется символ подстановки для копирования как package.json, так и package-lock.json,
 # работает с npm@5+
-RUN ls
 COPY . ./
-RUN ls
 RUN chmod +x ./nodecheck.sh
 RUN ./nodecheck.sh
 
