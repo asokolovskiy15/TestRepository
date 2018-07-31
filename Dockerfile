@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 # работает с npm@5+
 COPY . ./
 RUN chmod +x ./bootstart.sh
-RUN ./bootstarts.sh
+RUN ./bootstart.sh
 
 RUN npm install
 # Используется при сборке кода в продакшене
