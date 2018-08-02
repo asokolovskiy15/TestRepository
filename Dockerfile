@@ -12,9 +12,10 @@ RUN npm install
 # RUN npm install --only=production
 # Скопировать исходники приложения
 RUN ls
+COPY . .
 RUN chmod +x ./bootstart.sh
 RUN ./bootstart.sh
-COPY . .
+
 RUN ls
 EXPOSE 8080
 CMD [ "npm", "start" ]
