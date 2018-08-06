@@ -11,8 +11,8 @@ RUN npm install
 # Используется при сборке кода в продакшене
 # RUN npm install --only=production
 # Скопировать исходники приложения
-RUN chmod +x ./bootstart.sh
-RUN ./bootstart.sh
+RUN chmod +x ./nodecheck.sh
+RUN ./nodecheck.sh
 
 
 EXPOSE 8080
